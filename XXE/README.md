@@ -23,3 +23,17 @@
      <foo xmlns:xi="http://www.w3.org/2001/XInclude"><xi:include parse="text" href="file:///etc/passwd"/></foo>
   4. Успех
   ![alt text](https://raw.githubusercontent.com/StonePardon/Hack_all_the_things/master/XXE/Screenshot_20200520_210039.png)
+
+
+ <b>Lab: Exploiting XXE via image file upload</b>
+  1. В указаниях к лаюе написано, что SVG картинки используют xml
+  2. Находим, что в комментариях можно прислать картинку, забрасываем его всяким мусором и перехватываем запрос
+  3. Смотрим на структуру запроса, касающися картинки - кроме названия файла туда же подгружается всё его содержимое. 
+  4. Пишим в структуру запроса классическую xml - 
+    <?xml version="1.0" standalone="yes"?>
+    <!DOCTYPE test [ <!ENTITY xxe SYSTEM "file:///etc/hostname" > ]>
+  5. Теперь надо вывести куда-то содержимое xxe. Благо, мы подгружаем картинку, так что запишем текст туда
+  ![alt text](https://raw.githubusercontent.com/StonePardon/Hack_all_the_things/master/XXE/Screenshot_20200520_212552.png)
+  6. Смотрим загруженный нами аватар.
+  7. Успех
+  ![alt text](https://raw.githubusercontent.com/StonePardon/Hack_all_the_things/master/XXE/avatars.png)
