@@ -13,7 +13,7 @@
  ![alt text](https://raw.githubusercontent.com/StonePardon/Hack_all_the_things/master/XXE/Screenshot_20200520_205120.png)
  4. Проделываем так, пока не находим нужные нам данные.
  5. Успех
- ![alt text](https://raw.githubusercontent.com/StonePardon/Hack_all_the_things/master/XXE/Screenshot_20200520_205223.png
+ ![alt text](https://raw.githubusercontent.com/StonePardon/Hack_all_the_things/master/XXE/Screenshot_20200520_205223.png)
  
 
  <b>Lab: Exploiting XInclude to retrieve files</b>
