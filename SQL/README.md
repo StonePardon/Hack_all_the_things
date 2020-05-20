@@ -9,7 +9,7 @@
   2. Вместо логина пишем administrator, вместо пароля пишем ' OR 1=1 --
   3. Успех
 
-
+<b>Lab: SQL injection UNION attack, determining the number of columns returned by the query</b>
   1. Выбираем любую категорию
   2. '-- возвращают тот же результат
   3. Дописываем мжду ними UNION SELECT и путаемся подобрать колличество столбцов, путем перечисления NULL после SELECT
